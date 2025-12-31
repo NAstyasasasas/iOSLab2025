@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Recipe_gridApp: App {
+    @State var viewModel = RecipesViewModel(recipeService: MockRecipeService())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecipesView(viewModel: viewModel)
+                .preferredColorScheme(.light)
         }
     }
 }
