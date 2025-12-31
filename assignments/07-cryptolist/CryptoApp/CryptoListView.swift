@@ -31,8 +31,7 @@ struct CryptoListView: View {
         }
     }
     
-    @ViewBuilder
-    private var content: some View {
+    @ViewBuilder private var content: some View {
         switch viewModel.state {
         case .loading:
             ProgressView("Loading...")
