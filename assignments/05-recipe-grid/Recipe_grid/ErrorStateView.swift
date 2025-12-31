@@ -35,5 +35,3 @@ struct ErrorStateView: View {
         .padding()
     }
 }
-
-
