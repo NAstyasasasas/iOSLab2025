@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CategoryFilterView: View {
-    @Binding var selectedCategory: String?
+    @Binding
+    var selectedCategory: String?
     let categories: [String]
     
     var body: some View {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecipeCardView: View {
     let recipe: Recipe
-    var onDelete: (() -> Void)? = nil
+    var onDelete: (() -> Void)?
     
     var body: some View {
         ZStack(alignment: .topTrailing) {

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RecipesView: View {
-    @Bindable var viewModel: RecipesViewModel
+    @Bindable
+    var viewModel: RecipesViewModel
     
     @State private var showAdd = false
     @Namespace private var namespace
