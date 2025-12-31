@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct RecipesView: View {
-    @Bindable
-    var viewModel: RecipesViewModel
+    @Bindable var viewModel: RecipesViewModel
     
     @State private var showAdd = false
     @Namespace private var namespace
@@ -66,8 +65,7 @@ struct RecipesView: View {
         }
     }
     
-    @ViewBuilder
-    private var bodyContent: some View {
+    @ViewBuilder private var bodyContent: some View {
         switch viewModel.screenState {
         case .loading:
             ProgressView()

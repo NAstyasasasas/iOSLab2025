@@ -7,8 +7,7 @@
 
 import Foundation
 
-@Observable
-final class RecipesViewModel {
+@Observable final class RecipesViewModel {
     enum ScreenState {
         case loading
         case error(String)
