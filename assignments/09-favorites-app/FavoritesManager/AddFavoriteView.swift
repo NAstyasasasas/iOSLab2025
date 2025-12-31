@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AddFavoriteView: View {
     @Bindable var viewModel: FavoritesViewModel
-    @Environment(\.dismiss) private var dismiss
+    @Environment(\.dismiss)
+    private var dismiss
     
     var body: some View {
         NavigationStack {

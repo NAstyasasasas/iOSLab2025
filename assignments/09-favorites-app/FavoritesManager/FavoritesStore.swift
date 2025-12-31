@@ -12,7 +12,9 @@ actor FavoritesStore {
     private var favorites: [Favorite] = []
     
     private var fileURL: URL {
-        let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        guard let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            fatalError("Не удалось найти папку Documents")
+        }
         return documents.appendingPathComponent(fileName)
     }
     
