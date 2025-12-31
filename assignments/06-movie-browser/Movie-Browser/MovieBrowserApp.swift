@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Movie_BrowserApp: App {
+struct MovieBrowserApp: App {
     @State private var viewModel = MoviesViewModel()
         
     var body: some Scene {

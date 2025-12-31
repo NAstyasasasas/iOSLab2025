@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AddMovieView: View {
-    @Environment(\.dismiss) private var dismiss
+    @Environment(\.dismiss)
+    private var dismiss
     @Bindable var viewModel: MoviesViewModel
     
     @State private var title = ""
