@@ -14,13 +14,13 @@ class ProfileViewController: UIViewController {
     private var isFollowing = false
     
     private let avatarImageView: UIImageView = {
-        let iv = UIImageView()
-        iv.contentMode = .scaleAspectFill
-        iv.clipsToBounds = true
-        iv.layer.cornerRadius = 75
-        iv.backgroundColor = .systemGray5
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 75
+        imageView.backgroundColor = .systemGray5
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
     
     private let nameLabel: UILabel = {
@@ -125,7 +125,8 @@ class ProfileViewController: UIViewController {
         followButton.addTarget(self, action: #selector(followTapped), for: .touchUpInside)
     }
     
-    @objc private func followTapped() {
+    @objc
+    private func followTapped() {
         isFollowing.toggle()
         
         if isFollowing {
